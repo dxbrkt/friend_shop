@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0b0d" />
+  <title>Friend Guide — аромадиффузоры для дома</title>
+  <meta name="description" content="Премиальные аромадиффузоры для дома: стойкое звучание до 16 недель, чистый состав и минималистичный дизайн." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="header" data-header></header>
+
+  <main>
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div>
+          <div style="display:flex;flex-wrap:wrap;gap:8px">
+            <span class="chip">✓ Премиальные аромадиффузоры</span>
+            <span class="chip">100 мл • до 16 недель</span>
+            <span class="chip">быстрая покупка на Ozon</span>
+          </div>
+
+          <h1 class="h1" style="margin-top:18px">
+            Дом, который встречает ароматом
+            <span style="color:rgba(255,255,255,.70)"> раньше, чем дверью</span>
+          </h1>
+          <p class="p" style="margin-top:14px;max-width:560px;font-size:16px">
+            Friend Guide — коллекция ароматов для дома в минималистичных флаконах.
+            Чистое звучание, аккуратный шлейф и ощущение «дорогого» уюта.
+          </p>
+
+          <div style="margin-top:22px;display:flex;flex-direction:column;gap:10px;max-width:420px">
+            <a class="btn btn-primary" href="catalog.html">Выбрать аромат →</a>
+            <a class="btn btn-secondary" data-ozon href="#">Купить на Ozon</a>
+          </div>
+
+          <div class="metrics">
+            <div class="glass metric">
+              <div class="v">4.9/5</div>
+              <div class="l">оценка клиентов</div>
+            </div>
+            <div class="glass metric">
+              <div class="v">1500+</div>
+              <div class="l">заказов</div>
+            </div>
+            <div class="glass metric">
+              <div class="v">&lt; 2%</div>
+              <div class="l">возвратов</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass card card-lift">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:10px">
+            <span class="chip">Хит коллекции</span>
+            <span class="small" id="featured-price">—</span>
+          </div>
+          <div class="media" style="margin-top:14px">
+            <img id="featured-image" src="assets/products/1.png" alt="Диффузор" />
+          </div>
+          <div style="margin-top:14px">
+            <div style="font-weight:800" id="featured-title">—</div>
+            <p class="p" style="margin-top:8px" id="featured-desc">—</p>
+          </div>
+          <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+            <a class="btn btn-secondary" id="featured-more" href="catalog.html">Подробнее</a>
+            <a class="btn btn-primary" data-ozon href="#">Купить на Ozon</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container grid" style="grid-template-columns:1fr;gap:12px">
+        <div class="grid" style="grid-template-columns:1fr;gap:12px">
+          <div class="glass card">
+            <div style="display:flex;gap:12px">
+              <div class="mark" style="height:42px;width:42px"><span style="color:var(--brand)">✦</span></div>
+              <div>
+                <div style="font-weight:800">Нишевое звучание</div>
+                <div class="p" style="margin-top:6px">Парфюмерная пирамида: верх, сердце, база — ароматы раскрываются объёмно и «дорого».</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass card">
+            <div style="display:flex;gap:12px">
+              <div class="mark" style="height:42px;width:42px"><span style="color:var(--brand)">✓</span></div>
+              <div>
+                <div style="font-weight:800">Комфортный состав</div>
+                <div class="p" style="margin-top:6px">Без резкой химозности: мягкий шлейф, который ощущается, но не давит.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass card">
+            <div style="display:flex;gap:12px">
+              <div class="mark" style="height:42px;width:42px"><span style="color:var(--brand)">⟡</span></div>
+              <div>
+                <div style="font-weight:800">До 16 недель</div>
+                <div class="p" style="margin-top:6px">Ровное звучание без «качелей»: аромат держит характер и насыщенность.</div>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass card">
+            <div style="display:flex;gap:12px">
+              <div class="mark" style="height:42px;width:42px"><span style="color:var(--brand)">☰</span></div>
+              <div>
+                <div style="font-weight:800">Интенсивность настраивается</div>
+                <div class="p" style="margin-top:6px">Меняйте количество палочек — от лёгкого фона до заметного аромата.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+ 
+        if (window.matchMedia('(min-width: 640px)').matches) {
+          document.currentScript.previousElementSibling.firstElementChild.style.gridTemplateColumns = 'repeat(2,1fr)'
+        }
+      </script>
+    </section>
+
+    <section class="section" id="how">
+      <div class="container">
+        <h2 class="h2">Как использовать</h2>
+        <p class="p" style="margin-top:10px">Простые шаги — и атмосфера дома меняется за пару часов.</p>
+
+        <div class="grid" style="margin-top:16px">
+          <div class="glass card"><div class="small">01</div><div style="margin-top:8px;font-weight:800">Откройте и установите</div><p class="p" style="margin-top:8px">Снимите пробку, вставьте палочки. Первое раскрытие — через 2–3 часа.</p></div>
+          <div class="glass card"><div class="small">02</div><div style="margin-top:8px;font-weight:800">Отрегулируйте интенсивность</div><p class="p" style="margin-top:8px">Начните с 4–5 палочек. Больше палочек — ярче звучание.</p></div>
+          <div class="glass card"><div class="small">03</div><div style="margin-top:8px;font-weight:800">Поддерживайте аромат</div><p class="p" style="margin-top:8px">Переворачивайте палочки 1–2 раза в неделю для обновления шлейфа.</p></div>
+        </div>
+        <script>
+          if (window.matchMedia('(min-width: 860px)').matches) {
+            document.currentScript.previousElementSibling.style.gridTemplateColumns = 'repeat(3,1fr)'
+          }
+        </script>
+      </div>
+    </section>
+
+    <section class="section" id="faq">
+      <div class="container">
+        <div class="glass card" style="padding:22px">
+          <div class="pgrid" style="margin-top:0">
+            <div>
+              <h2 class="h2">Ответы на популярные вопросы</h2>
+              <p class="p" style="margin-top:10px">Мы убрали «визуальный шум» и оставили то, что реально помогает покупке: ясные ответы и доверие.</p>
+
+              <div style="margin-top:14px;display:grid;gap:10px">
+                <details class="glass" style="border-radius:18px;padding:14px 16px">
+                  <summary style="cursor:pointer;font-weight:800">Сколько палочек ставить? <span style="float:right;color:rgba(255,255,255,.55)">▾</span></summary>
+                  <p class="p" style="margin-top:8px">Начните с 4–5. Для небольшой комнаты хватит 3–4, для большой — 6–8.</p>
+                </details>
+                <details class="glass" style="border-radius:18px;padding:14px 16px">
+                  <summary style="cursor:pointer;font-weight:800">Как усилить аромат? <span style="float:right;color:rgba(255,255,255,.55)">▾</span></summary>
+                  <p class="p" style="margin-top:8px">Переверните палочки и добавьте 1–2. Не ставьте рядом с батареей: аромат «выгорит» быстрее.</p>
+                </details>
+                <details class="glass" style="border-radius:18px;padding:14px 16px">
+                  <summary style="cursor:pointer;font-weight:800">Подходит ли для спальни? <span style="float:right;color:rgba(255,255,255,.55)">▾</span></summary>
+                  <p class="p" style="margin-top:8px">Да — выбирайте мягкие ароматы («Пион», «Чистый хлопок») и используйте меньше палочек.</p>
+                </details>
+              </div>
+            </div>
+
+            <div class="glass card" style="padding:18px">
+              <div style="font-weight:800">Готовы выбрать аромат?</div>
+              <p class="p" style="margin-top:8px">Перейдите в каталог: подбор по семействам, характеру и комнатам.</p>
+              <div style="margin-top:14px;display:grid;gap:10px">
+                <a class="btn btn-primary" href="catalog.html">Открыть каталог →</a>
+                <a class="btn btn-secondary" data-ozon href="#">Быстро купить на Ozon</a>
+              </div>
+              <p class="small" style="margin-top:12px">Совет: начните с 2 ароматов — так проще найти «сигнатуру» для дома.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" data-footer></footer>
+
+  <script type="module" src="js/home.js"></script>
+</body>
+</html>

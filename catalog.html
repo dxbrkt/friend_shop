@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0b0d" />
+  <title>Каталог — Friend Guide</title>
+  <meta name="description" content="Каталог ароматов Friend Guide: фильтр по семействам, поиск, страницы товаров." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="header" data-header></header>
+
+  <main class="section">
+    <div class="container">
+      <h1 class="h2">Каталог ароматов</h1>
+      <p class="p" style="margin-top:10px">Подберите «сигнатуру» под комнату и настроение. Основная покупка — через Ozon.</p>
+
+      <div class="toolbar" style="margin-top:16px">
+        <label class="input" aria-label="Поиск">
+          <span style="color:rgba(255,255,255,.60)">⌕</span>
+          <input id="q" placeholder="Поиск по названию или характеру" />
+        </label>
+
+        <label class="input" aria-label="Семейство">
+          <span style="color:rgba(255,255,255,.60)">⛭</span>
+	          <!-- Custom dropdown UI (for consistent rendering on Windows/macOS) -->
+	          <div class="cselect" data-cselect>
+	            <button class="cselect__trigger" type="button" id="familyTrigger" aria-haspopup="listbox" aria-expanded="false">
+	              Все семейства
+	            </button>
+	            <div class="cselect__menu glass" id="familyMenu" role="listbox" aria-label="Семейства" hidden></div>
+	            <!-- Keep native select for value/state (hidden). JS syncs it with custom UI. -->
+	            <select id="family" class="cselect__native" aria-hidden="true" tabindex="-1"></select>
+	          </div>
+        </label>
+      </div>
+
+      <div class="products" id="products" style="margin-top:16px"></div>
+
+      <div id="empty" class="glass card" style="margin-top:16px;display:none">
+        <div style="font-weight:800">Ничего не нашли</div>
+        <p class="p" style="margin-top:8px">Попробуй другой запрос или выбери «Все семейства».</p>
+      </div>
+
+      <div class="glass card" style="margin-top:18px">
+        <div style="display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:14px">
+          <div>
+            <div style="font-weight:800">Быстрая покупка</div>
+            <p class="p" style="margin-top:8px"></p>
+          </div>
+          <a class="btn btn-primary" data-ozon href="#">Купить на Ozon</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" data-footer></footer>
+  <script type="module" src="js/catalog.js"></script>
+</body>
+</html>

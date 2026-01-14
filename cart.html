@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0b0b0d" />
+  <title>Корзина — Friend Guide</title>
+  <meta name="description" content="Корзина Friend Guide: набор ароматов, изменение количества, итоги и быстрый переход на Ozon." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+<body>
+  <header class="header" data-header></header>
+
+  <main class="section">
+    <div class="container">
+      <div style="display:flex;flex-wrap:wrap;align-items:end;justify-content:space-between;gap:12px">
+        <div>
+          <h1 class="h2">Корзина</h1>
+          <p class="p" style="margin-top:10px">Соберите набор и оформите покупку удобным способом.</p>
+        </div>
+        <a class="small" href="catalog.html" style="color:rgba(255,255,255,.70)">Добавить ещё →</a>
+      </div>
+
+      <div id="empty" class="glass card" style="margin-top:16px;display:none;text-align:center">
+        <div style="font-weight:800">Корзина пустая</div>
+        <p class="p" style="margin-top:8px">Выберите аромат в каталоге — и соберите набор под свой дом.</p>
+        <a class="btn btn-primary" style="margin-top:14px" href="catalog.html">Открыть каталог</a>
+      </div>
+
+      <div class="cart-grid" id="grid" style="display:none">
+        <div class="glass card">
+          <div style="display:flex;align-items:center;justify-content:space-between;gap:10px">
+            <div style="font-weight:800">Товары (<span data-cart-count>0</span>)</div>
+            <button class="btn btn-ghost" id="clear" style="padding:10px 14px">Очистить</button>
+          </div>
+          <div style="margin-top:12px;display:grid;gap:10px" id="items"></div>
+        </div>
+
+        <aside class="glass card" style="height:max-content">
+          <div style="font-weight:800">Итого</div>
+          <div style="margin-top:10px;display:flex;align-items:end;justify-content:space-between;gap:10px">
+            <div class="small">Сумма</div>
+            <div style="font-size:28px;font-weight:900" id="total">—</div>
+          </div>
+          <p class="p" style="margin-top:10px">
+            Сейчас основной канал продажи — Ozon. Корзина работает как «список желаний»: соберите набор, затем купите быстро.
+          </p>
+
+          <div style="margin-top:14px;display:grid;gap:10px">
+            <a class="btn btn-primary" data-ozon href="#">Купить на Ozon</a>
+            <button class="btn btn-secondary" id="copy">Скопировать список заказа</button>
+          </div>
+
+          <div class="glass" style="margin-top:12px;border-radius:var(--radius2);padding:14px">
+            <div class="small">Текст заказа</div>
+            <pre style="margin-top:8px" id="order">—</pre>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer" data-footer></footer>
+  <script type="module" src="js/cartPage.js"></script>
+</body>
+</html>
