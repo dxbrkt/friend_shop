@@ -66,7 +66,7 @@ export const PRODUCTS = [
   {
     id: 'pure-cotton',
     title: 'Ч̶и̶с̶т̶ы̶й̶ ̶х̶л̶о̶п̶о̶к̶(нет в наличии)',
-    price: 10304,
+    price: 10330,
     family: 'Чистота',
     intensity: 'Мягкий',
     mood: 'Чистота / свежий текстиль',
