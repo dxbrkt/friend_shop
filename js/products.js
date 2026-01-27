@@ -51,7 +51,7 @@ export const PRODUCTS = [
   },
   {
     id: 'peony',
-    title: 'Пион',
+    title: 'П̶и̶о̶н̶(нет в наличии)',
     price: 946,
     family: 'Цветочный',
     intensity: 'Мягкий',
@@ -66,7 +66,7 @@ export const PRODUCTS = [
   {
     id: 'pure-cotton',
     title: 'Ч̶и̶с̶т̶ы̶й̶ ̶х̶л̶о̶п̶о̶к̶(нет в наличии)',
-    price: 'нет в наличие',
+    price: '1362',
     family: 'Чистота',
     intensity: 'Мягкий',
     mood: 'Чистота / свежий текстиль',
@@ -93,8 +93,8 @@ export const PRODUCTS = [
   },
   {
     id: 'lemongrass',
-    title: 'Lemongrass',
-    price: 'нет в наличии',
+    title: 'L̶e̶m̶o̶n̶g̶r̶a̶s̶s̶(нет в наличии)',
+    price: '1362',
     family: 'Свежий',
     intensity: 'Яркий',
     mood: 'Бодрость / чистый воздух',
